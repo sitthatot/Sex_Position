@@ -17,10 +17,17 @@ class MyApp extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               Container(
-
-              ),
-              //Sex Position Name
-              Center(
+                
+                
+                margin: EdgeInsets.only(
+                  top: 20,
+                  right: 20,
+                  left: 20,
+                  bottom: 20),
+                
+                color: Color(0xFF1A1A1A),
+                child: Column(children: [
+                    Center(
                 child: Container(
                   height: 100,
                   width: 200,
@@ -84,7 +91,7 @@ class MyApp extends StatelessWidget {
                   padding: EdgeInsets.all(20),
                   alignment: Alignment.center,
                   child: const Text(
-                    'A paragraph is a series of sentences that are organized and coherent, and are all related to a single topic. Almost every piece of writing you do that is longer than a few sentences should be organized into paragraphs. This is because paragraphs show a reader where the subdivisions of an essay begin and end, and thus help the reader see the organization of the essay and grasp its main points.',
+                    'A paragraph is a series of sentences that are organized and coherent, and are all related to a single topic. Almost every piece of writing you do that is longer than a few sentences should be organized into paragraphs. This is because paragraphs show a reader where the',
                     style: TextStyle(
                       fontSize: 16,
                       color: Colors.white
@@ -92,6 +99,10 @@ class MyApp extends StatelessWidget {
                   ),
                 ),
               ),
+                ]),
+              ),
+              //Sex Position Name
+              
             ],
           )),
       theme: ThemeData(scaffoldBackgroundColor: Color(0xFF660000)),
