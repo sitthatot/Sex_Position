@@ -16,8 +16,12 @@ class MyApp extends StatelessWidget {
           body: Column(
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
+              
               Container(
-                
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(15),
+                  color: Color(0xFF1A1A1A),
+                ),
                 
                 margin: EdgeInsets.only(
                   top: 20,
@@ -25,7 +29,6 @@ class MyApp extends StatelessWidget {
                   left: 20,
                   bottom: 20),
                 
-                color: Color(0xFF1A1A1A),
                 child: Column(children: [
                     Center(
                 child: Container(
