@@ -16,21 +16,27 @@ class MyApp extends StatelessWidget {
           body: Column(
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
+              Container(
+
+              ),
+              //Sex Position Name
               Center(
                 child: Container(
                   height: 100,
                   width: 200,
-                  color: Colors.green[200],
                   alignment: Alignment.center,
                   child: const Text(
-                    'NO 31',
+                    'Missionary',
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
                       fontSize: 40,
+                      color: Colors.white,
                     ),
                   ),
                 ),
               ),
+
+              //Sex Picture ART
               Center(
                 child: Container(
                   height: 256,
@@ -46,6 +52,8 @@ class MyApp extends StatelessWidget {
                   ),
                 ),
               ),
+
+              //Level tube
               Container(
                 padding: EdgeInsets.all(20),
                 child: LinearPercentIndicator(
@@ -59,16 +67,31 @@ class MyApp extends StatelessWidget {
                     "Level",
                     style: TextStyle(
                       fontSize: 20,
+                      color: Colors.white,
                     ),
                   ),
                   trailing: new Text(
                     "3",
                     style:
-                        TextStyle(fontSize: 20, color: Colors.deepOrangeAccent),
+                        TextStyle(fontSize: 20, color: Colors.white),
                   ),
                   progressColor: Colors.redAccent,
                 ),
-              )
+              ),
+
+              Center(
+                child: Container(
+                  padding: EdgeInsets.all(20),
+                  alignment: Alignment.center,
+                  child: const Text(
+                    'A paragraph is a series of sentences that are organized and coherent, and are all related to a single topic. Almost every piece of writing you do that is longer than a few sentences should be organized into paragraphs. This is because paragraphs show a reader where the subdivisions of an essay begin and end, and thus help the reader see the organization of the essay and grasp its main points.',
+                    style: TextStyle(
+                      fontSize: 16,
+                      color: Colors.white
+                    ),
+                  ),
+                ),
+              ),
             ],
           )),
       theme: ThemeData(scaffoldBackgroundColor: Color(0xFF660000)),
