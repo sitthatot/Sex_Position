@@ -31,6 +31,21 @@ class MyApp extends StatelessWidget {
                   ),
                 ),
               ),
+              Center(
+                child: Container(
+                  height: 256,
+                  width: 250,
+                  color: Color.fromARGB(255, 255, 255, 255),
+                  alignment: Alignment.center,
+                  child: const Text(
+                    'NO 31',
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      fontSize: 40,
+                    ),
+                  ),
+                ),
+              ),
               Container(
                 padding: EdgeInsets.all(20),
                 child: LinearPercentIndicator(
