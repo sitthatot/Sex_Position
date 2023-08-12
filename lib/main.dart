@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:percent_indicator/linear_percent_indicator.dart';
 
 void main() {
   runApp(MyApp());
@@ -17,7 +18,7 @@ class MyApp extends StatelessWidget {
             children: [
               Center(
                 child: Container(
-                  height: 150,
+                  height: 100,
                   width: 200,
                   color: Colors.green[200],
                   alignment: Alignment.center,
@@ -26,11 +27,33 @@ class MyApp extends StatelessWidget {
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
                       fontSize: 40,
-                      ),
-                      
+                    ),
                   ),
                 ),
               ),
+              Container(
+                padding: EdgeInsets.all(20),
+                child: LinearPercentIndicator(
+                  width: 180.0,
+                  lineHeight: 15,
+                  linearStrokeCap: LinearStrokeCap.roundAll,
+                  percent: 60 / 100,
+                  animation: true,
+                  animationDuration: 1500,
+                  leading: new Text(
+                    "Level",
+                    style: TextStyle(
+                      fontSize: 20,
+                    ),
+                  ),
+                  trailing: new Text(
+                    "3",
+                    style:
+                        TextStyle(fontSize: 20, color: Colors.deepOrangeAccent),
+                  ),
+                  progressColor: Colors.redAccent,
+                ),
+              )
             ],
           )),
       theme: ThemeData(scaffoldBackgroundColor: Color(0xFF660000)),
