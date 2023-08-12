@@ -21,7 +21,14 @@ class MyApp extends StatelessWidget {
                   width: 200,
                   color: Colors.green[200],
                   alignment: Alignment.center,
-                  child: const Text('NO 31'),
+                  child: const Text(
+                    'NO 31',
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      fontSize: 40,
+                      ),
+                      
+                  ),
                 ),
               ),
             ],
